@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\33984578865\\Desktop\\MCVGamer\\MCVGamer.csproj": {}
+    "C:\\Users\\33984578865\\Desktop\\Nova pasta\\MCVGamer\\MCVGamer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\33984578865\\Desktop\\MCVGamer\\MCVGamer.csproj": {
+    "C:\\Users\\33984578865\\Desktop\\Nova pasta\\MCVGamer\\MCVGamer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\33984578865\\Desktop\\MCVGamer\\MCVGamer.csproj",
+        "projectUniqueName": "C:\\Users\\33984578865\\Desktop\\Nova pasta\\MCVGamer\\MCVGamer.csproj",
         "projectName": "MCVGamer",
-        "projectPath": "C:\\Users\\33984578865\\Desktop\\MCVGamer\\MCVGamer.csproj",
+        "projectPath": "C:\\Users\\33984578865\\Desktop\\Nova pasta\\MCVGamer\\MCVGamer.csproj",
         "packagesPath": "C:\\Users\\33984578865\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\33984578865\\Desktop\\MCVGamer\\obj\\",
+        "outputPath": "C:\\Users\\33984578865\\Desktop\\Nova pasta\\MCVGamer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\33984578865\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -15,11 +15,15 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+        ViewBag.UserName = HttpContext.Session.GetString("UserName");
+
         return View();
     }
 
     public IActionResult Privacy()
     {
+        ViewBag.UserName = HttpContext.Session.GetString("UserName");
+        
         return View();
     }
 

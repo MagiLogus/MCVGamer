@@ -21,6 +21,8 @@ namespace Projeto_gamer_Back.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
+            
             //VARIAVEL QUE ARMAZENA AS EQUIPES LISTADAS DO BANCO 
             ViewBag.Equipe = c.Equipe.ToList();
 
@@ -107,6 +109,8 @@ namespace Projeto_gamer_Back.Controllers
         [Route("Editar/{id}")]
         public IActionResult Editar(int id)
         {
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
+            
             Equipe equipe = c.Equipe.First(x => x.IdEquipe == id);
 
             ViewBag.Equipe = equipe;

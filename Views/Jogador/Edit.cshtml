@@ -1,0 +1,48 @@
+@model Jogador
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+ <main>
+
+        <section class="container-grid cadastro-equipes">
+            @if (ViewBag.UserName == null)
+{
+    <a asp-area="" asp-controller="Login" asp-action="Index">Login</a>
+}
+else
+{
+            
+            <form action="" class="frm-cad-equipe" method="post" action="@Url.Action("Atualizar")">
+                <div class="cadequipe-titulo">
+                    <h1>Cadastro de Jogadores</h1>
+                    <hr>
+                </div>
+
+                @* <input class="campo-entrada" type="number" id="id-equipe" placeholder="Digite o Id da sua equipe:"> *@
+                @* <input class="campo-entrada" type="text" id="nome-equipe" placeholder="Digite o nome da sua equipe:">  *@
+                
+                <select class="campo-entrada" name="IdEquipea" id="IdEquipe">
+            <option value="0">Select one option</option>
+
+            @foreach (Equipe equipe in ViewBag.Equipe)
+            {
+                <option value="@equipe.IdEquipe">@equipe.Nome</option>
+            }
+        </select>
+                <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
+                <input class="campo-entrada" type="text" name="Nome" value="@ViewBag.Jogador.Nome" id="nome-jogador" placeholder="Digite o nome do Jogador:">
+                <input class="campo-entrada"type="Email" name="Email" value="@ViewBag.Jogador.Email" id="email-jogador" placeholder="Digite o Email do Jogador:">
+                <input class="campo-entrada" type="password" name="Senha" value="@ViewBag.Jogador.Senha" id="senha" placeholder="Digite a Senha:">
+                <button type="submit">Cadastrar</button>
+            </form>
+           
+}
+
+</section>
+</main>
+
+
+
+

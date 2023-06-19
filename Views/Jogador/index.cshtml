@@ -1,3 +1,76 @@
-@* criar a view de jogador  *@
-@* fazer os outros itens de jogadores na controler jogador *@
+@model Jogador
+
+@{
+    ViewData["Title"] = "Jogador";
+}
+
+ <main>
+
+        <section class="container-grid cadastro-equipes">
+            @if (ViewBag.UserName == null)
+{
+    <a asp-area="" asp-controller="Login" asp-action="Index">Login</a>
+}
+else
+{
+            
+            <form action="" class="frm-cad-equipe" method="post" action="@Url.Action("Cadastrar")">
+                <div class="cadequipe-titulo">
+                    <h1>Cadastro de Jogadores</h1>
+                    <hr>
+                </div>
+
+                @* <input class="campo-entrada" type="number" id="id-equipe" placeholder="Digite o Id da sua equipe:"> *@
+                @* <input class="campo-entrada" type="text" id="nome-equipe" placeholder="Digite o nome da sua equipe:"> *@
+                
+                @* <select class="campo-entrada" id="equipe-select">
+                    <option value="">Selecione uma Equipe</option>
+                    <option value="x">Equipe X</option>
+                    <option value="y">Equipe Y</option>
+                </select> *@
+                
+                <input class="campo-entrada" type="text" name="Nome" id="nome-jogador" placeholder="Digite o nome do Jogador:">
+                <input class="campo-entrada" type="email" name="Email" id="email-jogador" placeholder="Digite o Email do Jogador:">
+                <input class="campo-entrada" type="password" name="Senha" id="senha" placeholder="Digite a Senha:">
+                <button type="submit">Cadastrar</button>
+                
+                
+                
+                
+            </form>
+
+         <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+               @foreach (Jogador jogador in ViewBag.Jogador)
+               {
+                <tr>
+                    <td>@jogador.IdJogador</td>
+                    <td>@jogador.Nome</td>
+                    <td>@jogador.Email</td>
+                    <td>
+                        <img src="/img/Equipes/@jogador.Equipe.Imagem" alt="Imagem da equipe @jogador.Equipe.Nome" width="50px">
+                    </td>
+                    <td>
+                        <a asp-area="" asp-controller="Jogador" asp-action="Excluir" asp-route-id="@jogador.IdJogador"><img class="yellow-trash" src="~/assets/trash.png" alt=""></a>
+                        <a asp-area="" asp-controller="Jogador" asp-action="Editar" asp-route-id="@jogador.IdJogador"><iconify-icon icon="mdi:clipboard-edit-outline" style="color: #f9aa01;" width="20" height="22"></iconify-icon></a>
+                    </td>
+                </tr>
+                }
+
+                </tbody>
+            </table>
+}
+        </section>
+    </main>
+
+
+
 

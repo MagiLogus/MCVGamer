@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jPR+151RMTfErWVwNRKA0nqQ8xpeBYBWfFKXTeEYxAskuM3pZSbVqeJ0+5iY+Q3zKnezHmY8pHtvd80VUReenQ==",
+  "dgSpecHash": "SbAodHh5GVDZI8KtT3d61BG9BGZWEcr8crLjkqK9wg1oAqf75D2PxoL2NIqVZgg3ns8TOzk0HIYBBPGEywEG5g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\33984578865\\Desktop\\MCVGamer\\MCVGamer.csproj",
+  "projectFilePath": "C:\\Users\\33984578865\\Desktop\\Nova pasta\\MCVGamer\\MCVGamer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\33984578865\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\33984578865\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
